@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Jigyansu</title>
+    <link rel="stylesheet" href="styles.css" />
+<style>
+.pdf-frame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Optional: auto-scroll simulation */
+.pdf-card {
+    animation: floatPDF 6s infinite ease-in-out;
+}
+
+@keyframes floatPDF {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2 class="logo">Jigyansu Tripathi Portfolio</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+<h1>Projects</h1>
+
+<h2 style="margin-top:40px; color:#0a64ff;">Core Engineering Projects</h2>
+<div class="grid">
+
+    <div class="card">
+        <img src="MTP.png" style="width:100%; border-radius:8px;" />
+        <h3>Hydraulic Simulation Framework</h3>
+        <p>Python + EPANET based water distribution modelling & pressure analysis.</p>
+        <a href="project-details.html" class="btn small">View Details</a>
+        <a href="#" target="_blank" class="btn small" style="margin-top:10px; display:inline-block;">
+            View on GitHub
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="automated.png" style="width:100%; border-radius:8px;" />
+        <h3>Automated Irrigation System</h3>
+        <p>Arduino-based moisture sensing & irrigation automation.</p>
+        <a href="project-details.html" class="btn small">View Details</a>
+        <a href="#" target="_blank" class="btn small" style="margin-top:10px; display:inline-block;">
+            View on GitHub
+        </a>
+    </div>
+
+</div>
+
+<h2 style="margin-top:40px; color:#0a64ff;">GIS Projects</h2>
+<div class="grid">
+
+    <div class="card pdf-card">
+    <h3>Complete GIS + Remote Sensing Project Portfolio</h3>
+
+    <p>
+        This consolidated GIS project includes:
+        <br>• Land Use & Land Cover Classification (Random Forest & SVM)
+        <br>• Multi-temporal Change Detection Analysis
+        <br>• Raster Processing (NDVI, Slope, Contours)
+        <br>• Spatial Analysis & Zonal Statistics
+        <br>• QGIS + Python integrated workflow
+        <br><br>
+        Full documentation and outputs are included in the PDF report below.
+    </p>
+
+    <iframe src="gis-project.pdf#toolbar=0" class="pdf-frame"></iframe>
+
+    <a href="#" target="_blank" class="btn small" style="margin-top:10px; display:inline-block;">
+        View on GitHub
+    </a>
+</div>
+
+</div>
+
+<h2 style="margin-top:40px; color:#0a64ff;">Data Analytics & Data Science Projects</h2>
+<div class="grid">
+
+    <div class="card pdf-card">
+    <h3>Geonkhali WTP Performance Analysis</h3>
+    <p>
+        A detailed 4-year water treatment plant performance study including:
+        <br>• Raw & treated turbidity analysis  
+        <br>• Monsoon vs non-monsoon seasonal trends  
+        <br>• Filtration performance monitoring  
+        <br>• Python + Tableau based data analysis  
+        <br><br>
+        Certificate included below:
+    </p>
+
+    <iframe src="certificate-haldia.pdf#toolbar=0" class="pdf-frame"></iframe>
+
+    <a href="#" target="_blank" class="btn small" style="margin-top:10px; display:inline-block;">
+        View on GitHub
+    </a>
+</div>
+
+    <div class="card">
+        <img src="assets/project1.jpg" />
+        <h3>Climate Visibility Forecasting</h3>
+        <p>ARIMA, LSTM & Prophet models deployed using FastAPI & Docker.</p>
+        <a href="project-details.html" class="btn small">View Details</a>
+        <a href="#" target="_blank" class="btn small" style="margin-top:10px; display:inline-block;">
+            View on GitHub
+        </a>
+    </div>
+
+</div>
+</div>
+
+<footer>© 2025 Jigyansu Tripathi</footer>
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const pdf = document.querySelector(".pdf-frame");
+    let scrollPos = 0;
+
+    function autoScrollPDF() {
+        scrollPos += 0.4; // scroll speed (lower = slower)
+        pdf.contentWindow.scrollTo(0, scrollPos);
+
+        // reset scroll when reaching bottom
+        if (scrollPos >= pdf.contentWindow.document.body.scrollHeight) {
+            scrollPos = 0;
+        }
+        requestAnimationFrame(autoScrollPDF);
+    }
+
+    // wait for the iframe to load fully
+    pdf.onload = function () {
+        requestAnimationFrame(autoScrollPDF);
+    };
+});
+</script>
+</body>
+</html>
