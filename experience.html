@@ -1,198 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience - Jigyansu Tripathi</title>
-    <link rel="stylesheet" href="styles.css" />
-
-    <style>
-        .timeline-container {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 20px;
-            position: relative;
-        }
-
-        .timeline-line {
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #0a64ff;
-            border-radius: 2px;
-        }
-
-        .timeline-item {
-            margin-left: 60px;
-            margin-bottom: 50px;
-            position: relative;
-            animation: fadeInUp 0.8s ease-out;
-        }
-
-        .timeline-dot {
-            width: 18px;
-            height: 18px;
-            background: #0a64ff;
-            border-radius: 50%;
-            position: absolute;
-            left: -41px;
-            top: 3px;
-            box-shadow: 0 0 0 4px rgba(10, 100, 255, 0.25);
-        }
-
-        .timeline-item h2 {
-            margin: 0;
-            color: #0a64ff;
-        }
-
-        .timeline-item p {
-            margin: 3px 0 10px 0;
-            font-weight: 600;
-            color: #444;
-        }
-
-        .timeline-item ul {
-            margin-top: 8px;
-        }
-
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .cert-btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 14px;
-            background: #0a64ff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-        .cert-btn:hover {
-            background: #084ec7;
-        }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Jigyansu Tripathi</title>
+    <meta name="description" content="Work experience, training and certifications of Jigyansu Tripathi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,500;87.5,600;87.5,700&family=Public+Sans:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <h2 class="logo">Jigyansu Tripathi Portfolio</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html" class="active">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Jigyansu Tripathi</a>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html" aria-current="page">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="freelance.html">Freelance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<div class="timeline-container">
-    <div class="timeline-line"></div>
-
-    <!-- Experience 1 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="haldia.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            Research Intern — Haldia Water Services Pvt. Ltd.
-        </h2>
-        <p>May 2025 – July 2025</p>
-        <ul>
-            <li>Conducted water quality assessment and turbidity trend analysis.</li>
-            <li>Evaluated filtration efficiency and treatment performance for WTP processes.</li>
-            <li>Prepared analytical reports supporting process optimization.</li>
-        </ul>
-        <a href="certificate-haldia.pdf" class="cert-btn" target="_blank">View Certificate</a>
+<main>
+<section class="page-head">
+    <div class="wrap">
+        <h1>Experience</h1>
+        <p>Consulting, research and campus roles, followed by the trainings and certifications behind my modelling work.</p>
     </div>
+</section>
 
-    <!-- Experience 2 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="cfmtti.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            Engineer Trainee — CFMTTI, Bhopal
-        </h2>
-        <p>July 2022 – Aug 2022</p>
-        <ul>
-            <li>Hands-on training in agricultural machinery and equipment diagnostics.</li>
-            <li>Performed maintenance operations, inspection, and field testing.</li>
-        </ul>
-        <a href="certificate-cfmtti.pdf" class="cert-btn" target="_blank">View Certificate</a>
+<section class="section">
+    <div class="wrap">
+        <div class="group-title"><h2>Work</h2></div>
+        <ol class="timeline" reversed>
+            <li>
+                <div class="logo current"><span class="initials" aria-hidden="true">VP</span></div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Design Engineer</h3>
+                            <p class="org">Vastushilpi Project and Consultancy Pvt. Ltd, Bhopal</p>
+                        </div>
+                        <span class="when">May 2026 – Present</span>
+                    </div>
+                    <p>Consultancy delivering water supply, wastewater treatment, storm water drainage and flood modelling projects.</p>
+                    <ul>
+                        <li>Prepare DPRs and cost estimates for STP rehabilitation in 5 towns, and propose new STPs for 6 towns in Madhya Pradesh.</li>
+                        <li>Develop storm water drainage models in SewerGEMS for Hiraundi Industrial Area, Madhya Pradesh, under the BHAVYA scheme.</li>
+                        <li>Support water supply and water treatment plant projects in Madhya Pradesh under the Urban Challenge Fund (UCF).</li>
+                    </ul>
+                </article>
+            </li>
+            <li>
+                <div class="logo"><img src="iit.png" alt="IIT Kharagpur"></div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Placement Coordinator</h3>
+                            <p class="org">IIT Kharagpur</p>
+                        </div>
+                        <span class="when">2025 – 2026</span>
+                    </div>
+                    <ul>
+                        <li>Coordinated company outreach and student placement operations.</li>
+                        <li>Managed communication between recruiters and students to keep schedules running smoothly.</li>
+                    </ul>
+                    <a class="btn small ghost" href="certificate-placement.pdf" target="_blank" rel="noopener">View certificate</a>
+                </article>
+            </li>
+            <li>
+                <div class="logo"><img src="haldia.png" alt="Haldia Water Services"></div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Research Intern</h3>
+                            <p class="org">Haldia Water Services Pvt. Ltd, Geonkhali, West Bengal</p>
+                        </div>
+                        <span class="when">May 2025 – Jun 2025</span>
+                    </div>
+                    <ul>
+                        <li>Evaluated the performance of the Geonkhali WTP using four years of operational water quality data.</li>
+                        <li>Built an interactive Python and Tableau dashboard showing seasonal and tidal effects on raw and treated water quality, speeding up analysis.</li>
+                    </ul>
+                    <div class="btn-row">
+                        <a class="btn small ghost" href="project-details.html">Read the study</a>
+                        <a class="btn small ghost" href="certificate-haldia.pdf" target="_blank" rel="noopener">View certificate</a>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <div class="logo"><img src="iit.png" alt="IIT Kharagpur"></div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Teaching Assistant</h3>
+                            <p class="org">IIT Kharagpur</p>
+                        </div>
+                        <span class="when">2025</span>
+                    </div>
+                    <ul>
+                        <li>Assisted with water engineering coursework, laboratory sessions and academic guidance.</li>
+                        <li>Helped students with core concepts and analytical assignments.</li>
+                    </ul>
+                    <a class="btn small ghost" href="certificate-ta.pdf" target="_blank" rel="noopener">View certificate</a>
+                </article>
+            </li>
+            <li>
+                <div class="logo"><img src="cfmtti.png" alt="CFMTTI Bhopal"></div>
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Engineer Trainee</h3>
+                            <p class="org">Central Farm Machinery Training &amp; Testing Institute (CFMTTI), Bhopal</p>
+                        </div>
+                        <span class="when">Jul 2022 – Aug 2022</span>
+                    </div>
+                    <ul>
+                        <li>Hands-on training in agricultural machinery and equipment diagnostics.</li>
+                        <li>Carried out maintenance, inspection and field testing.</li>
+                    </ul>
+                    <a class="btn small ghost" href="certificate-cfmtti.pdf" target="_blank" rel="noopener">View certificate</a>
+                </article>
+            </li>
+        </ol>
+
+        <div class="group-title"><h2>Certifications &amp; training</h2></div>
+        <div class="certs">
+            <div class="cert">
+                <img src="bentley.png" alt="">
+                <div>
+                    <h3>Bentley Accredited Water Modeler</h3>
+                    <p class="issuer">Bentley Systems</p>
+                </div>
+            </div>
+            <div class="cert">
+                <span class="cert-mark" aria-hidden="true">HEC</span>
+                <div>
+                    <h3>Hydraulic Modeling with HEC-RAS</h3>
+                    <p class="issuer">UNESCO with the USACE Hydrologic Engineering Center</p>
+                </div>
+            </div>
+            <div class="cert">
+                <img src="bentley.png" alt="">
+                <div>
+                    <h3>HAMMER Training (WaterGEMS) – Fundamental</h3>
+                    <p class="issuer">Bentley Systems · 2025</p>
+                    <p>Surge analysis, pressure transients and pressure management in water distribution systems.</p>
+                    <div class="actions">
+                        <a class="btn small ghost" href="certificate-WaterGems.pdf" target="_blank" rel="noopener">View certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert">
+                <img src="Mainpage_TUFLOW_Installer_Logo_001.png" alt="">
+                <div>
+                    <h3>QGIS Introduction for TUFLOW – TT001(E)</h3>
+                    <p class="issuer">TUFLOW eLearning · 2025</p>
+                    <p>TUFLOW model setup in QGIS with GeoPackage and Shapefile workflows, spatial data preparation and layer management.</p>
+                    <div class="actions">
+                        <a class="btn small ghost" href="Certificate_TT001E_QGIS_Introduction_for_TUFLOW_GeoPackage.pdf" target="_blank" rel="noopener">GeoPackage certificate</a>
+                        <a class="btn small ghost" href="Certificate_TT001E_QGIS_Introduction_for_TUFLOW_Shape_Files.pdf" target="_blank" rel="noopener">Shapefile certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+</main>
 
-    <!-- Experience 3 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="iit.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            Teaching Assistant — IIT Kharagpur
-        </h2>
-        <p>2025</p>
-        <ul>
-            <li>Assisted in water engineering coursework, lab activities, and academic guidance.</li>
-            <li>Helped students in conceptual understanding and analytical tasks.</li>
-        </ul>
-        <a href="certificate-ta.pdf" class="cert-btn" target="_blank">View Certificate</a>
+<footer class="site-footer">
+    <div class="wrap">
+        <span>© 2026 Jigyansu Tripathi</span>
+        <nav aria-label="Profiles">
+            <a href="https://www.linkedin.com/in/jigyansu-tripathi-390004181/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/jigyansu1703" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jigyansu1703.24@kgpian.iitkgp.ac.in">Email</a>
+        </nav>
     </div>
-
-    <!-- Experience 4 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="iit.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            Placement Coordinator — IIT Kharagpur
-        </h2>
-        <p>2025 – 2026</p>
-        <ul>
-            <li>Coordinated company outreach and student placement operations.</li>
-            <li>Facilitated communication between recruiters and students for smooth scheduling.</li>
-        </ul>
-        <a href="certificate-placement.pdf" class="cert-btn" target="_blank">View Certificate</a>
-    </div>
-
-    <!-- Experience 5 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="bentley.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            HAMMER Training (WaterGEMS) – Fundamental
-        </h2>
-        <p>2025 – 2025</p>
-        <ul>
-            <li>Completed HAMMER Training (WaterGEMS – Fundamental) by Bentley Systems.</li>
-            <li> covering surge analysis, pressure transients, and pressure management in water distribution systems.</li>
-        </ul>
-        <a href="certificate-WaterGems.pdf" class="cert-btn" target="_blank">View Certificate</a>
-    </div>
-
-     <!-- Experience 6 -->
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h2>
-            <img src="Mainpage_TUFLOW_Installer_Logo_001.png" style="width:40px; vertical-align:middle; margin-right:10px;">
-            QGIS Introduction for TUFLOW – TT001(E)
-        </h2>
-        <p>2025 – 2025</p>
-        <ul>
-            <li>Completed TT001(E): QGIS Introduction for TUFLOW training via TUFLOW eLearning.</li>
-            <li>Gained hands-on understanding of TUFLOW model setup using QGIS, including GeoPackage and Shapefile workflows.</li>
-            <li>Covered spatial data preparation, layer management, and best practices for TUFLOW model development.</li>
-        </ul>
-        <a href="Certificate_TT001E_QGIS_Introduction_for_TUFLOW_GeoPackage.pdf" class="cert-btn" target="_blank">View Certificate (GeoPackage)</a>
-        <br>
-        <a href="Certificate_TT001E_QGIS_Introduction_for_TUFLOW_Shape_Files.pdf" class="cert-btn" target="_blank">View Certificate (Shapefiles)</a>
-    </div>
-
-</div>
-
-<footer>© 2025 Jigyansu Tripathi</footer>
+</footer>
 
 </body>
 </html>

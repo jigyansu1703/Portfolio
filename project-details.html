@@ -1,38 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project Details | Jigyansu</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geonkhali WTP Performance Study | Jigyansu Tripathi</title>
+    <meta name="description" content="Four-year performance evaluation of the Geonkhali water treatment plant.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,500;87.5,600;87.5,700&family=Public+Sans:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-    <h2 class="logo">JT Portfolio</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Jigyansu Tripathi</a>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="freelance.html">Freelance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<div class="container">
-    <h1>Geonkhali Water Treatment Plant Analysis</h1>
-    <img src="assets/project1.jpg" class="banner-img" />
+<main>
+<section class="page-head">
+    <div class="wrap">
+        <p style="margin-bottom:10px"><a href="projects.html">Back to projects</a></p>
+        <h1>Geonkhali water treatment plant performance study</h1>
+        <p>Research internship at Haldia Water Services, May – June 2025</p>
+    </div>
+</section>
 
-    <h2>Problem</h2>
-    <p>Tidal & seasonal water quality fluctuations affecting WTP performance.</p>
+<section class="section">
+    <div class="wrap detail">
+        <ul class="tags"><li>Python</li><li>Tableau</li><li>Water quality</li><li>Filtration</li></ul>
 
-    <h2>Approach</h2>
-    <p>Python-based 4-year dataset analysis + Tableau dashboards.</p>
+        <h2>Problem</h2>
+        <p>
+            The Geonkhali WTP draws raw water whose quality swings with tides and with the monsoon. Operators needed a
+            clear picture of how those swings affected treatment performance over time, but the data sat in years of
+            operational logs.
+        </p>
 
-    <h2>Impact</h2>
-    <p>Improved operational decision-making & insight quality.</p>
-</div>
+        <h2>Approach</h2>
+        <ul>
+            <li>Cleaned and analysed four years of operational water quality records in Python.</li>
+            <li>Compared raw and treated turbidity across monsoon and non-monsoon seasons and tidal conditions.</li>
+            <li>Tracked filtration efficiency to see where treatment performance dipped.</li>
+            <li>Built an interactive Tableau dashboard so the trends could be explored without re-running the analysis.</li>
+        </ul>
 
-<footer>© 2025 Jigyansu Tripathi</footer>
+        <h2>Outcome</h2>
+        <p>
+            The dashboard made seasonal and tidal effects visible at a glance and sped up routine water quality analysis.
+            The findings were written up in analytical reports to support process optimisation at the plant.
+        </p>
+
+        <iframe src="certificate-haldia.pdf#toolbar=0&amp;view=FitH" class="pdf-frame" title="Internship certificate" loading="lazy"></iframe>
+        <a class="btn small ghost" href="certificate-haldia.pdf" target="_blank" rel="noopener">Open certificate (PDF)</a>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <span>© 2026 Jigyansu Tripathi</span>
+        <nav aria-label="Profiles">
+            <a href="https://www.linkedin.com/in/jigyansu-tripathi-390004181/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/jigyansu1703" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jigyansu1703.24@kgpian.iitkgp.ac.in">Email</a>
+        </nav>
+    </div>
+</footer>
 
 </body>
 </html>

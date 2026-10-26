@@ -1,50 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jigyansu Tripathi Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigyansu Tripathi | Water Resources Engineer</title>
+    <meta name="description" content="Jigyansu Tripathi — Water Resources Engineer (M.Tech, IIT Kharagpur). Hydraulic and hydrological modelling, water and wastewater design, GIS and Python.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,500;87.5,600;87.5,700&family=Public+Sans:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <h2 class="logo">Jigyansu Tripathi Portfolio</h2>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">Jigyansu Tripathi</a>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="freelance.html">Freelance</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
+<main>
 <section class="hero">
-    <div class="hero-container">
-        <img src="./profile.png" class="profile-img" />
-
-        <h1>I am <span class="highlight">Jigyansu Tripathi</span></h1>
-
-        <p class="subtitle">
-            Water Engineering & Management • Data Analytics • GIS & Environmental Intelligence • IIT Kharagpur Postgraduate<br> 📞 +919424636453• ✉️ jigyansu1703.24@kgpian.iitkgp.ac.in
-        </p>
-
-        <a class="btn" href="Jigyansu-Resume.pdf" download>Download Resume</a>
-
-        <div class="social-buttons">
-            <a href="https://www.linkedin.com/in/jigyansu-tripathi-390004181/"
-               target="_blank" class="btn small">LinkedIn Profile</a>
-
-            <a href="https://github.com/jigyansu1703"
-               target="_blank" class="btn small">GitHub Profile</a>
+    <img class="contours" src="contours.svg" alt="">
+    <div class="wrap hero-inner">
+        <div class="hero-copy">
+            <h1>Jigyansu Tripathi</h1>
+            <p class="role">Water Resources Engineer</p>
+            <p class="lede">
+                Design Engineer at Vastushilpi Project and Consultancy, Bhopal, working on water supply,
+                wastewater and storm water projects across Madhya Pradesh. M.Tech in Water Engineering
+                and Management from IIT Kharagpur.
+            </p>
+            <div class="btn-row">
+                <a class="btn" href="Jigyansu-Resume.pdf" download>Download resume</a>
+                <a class="btn ghost" href="projects.html">See my projects</a>
+            </div>
+            <div class="contact-line">
+                <a href="mailto:jigyansu1703.24@kgpian.iitkgp.ac.in">jigyansu1703.24@kgpian.iitkgp.ac.in</a>
+                <a href="tel:+919424636453">+91 94246 36453</a>
+                <a href="https://www.linkedin.com/in/jigyansu-tripathi-390004181/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/jigyansu1703" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <div class="portrait">
+            <img src="profile.jpg" alt="Portrait of Jigyansu Tripathi" width="340" height="340">
         </div>
     </div>
 </section>
 
-<footer>© 2025 Jigyansu Tripathi</footer>
+<section class="section">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>What I work on</h2>
+        </div>
+        <div class="focus">
+            <div>
+                <h3>Water &amp; wastewater design</h3>
+                <p>DPRs and cost estimates for sewage treatment plant rehabilitation, new STP proposals, and support on water supply and treatment plant projects.</p>
+            </div>
+            <div>
+                <h3>Hydraulic &amp; hydrological modelling</h3>
+                <p>Water distribution and storm water networks in EPANET, WaterGEMS and SewerGEMS, and river hydraulics in HEC-RAS.</p>
+            </div>
+            <div>
+                <h3>GIS &amp; data analysis</h3>
+                <p>DEM-based watershed delineation, land use classification and remote sensing in QGIS, with Python, SQL and Tableau for analysis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>Highlights</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="body">
+                    <h3>Design Engineer, Vastushilpi</h3>
+                    <p>STP rehabilitation DPRs for 5 towns, new STP proposals for 6 towns, and a SewerGEMS storm water model for Hiraundi Industrial Area under the BHAVYA scheme.</p>
+                    <div class="actions"><a class="btn small ghost" href="experience.html">View experience</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="body">
+                    <h3>Pressure management framework</h3>
+                    <p>A Python-integrated EPANET framework that automates scenario runs to test PRVs, pump operations and demand changes on a water distribution network.</p>
+                    <div class="actions"><a class="btn small ghost" href="projects.html">View projects</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="body">
+                    <h3>Credentials</h3>
+                    <ul>
+                        <li>M.Tech, IIT Kharagpur — CGPA 8.5</li>
+                        <li>GATE (AG) 2024 — All India Rank 125</li>
+                        <li>Bentley Accredited Water Modeler</li>
+                        <li>Hydraulic Modeling with HEC-RAS (UNESCO &amp; USACE HEC)</li>
+                    </ul>
+                    <div class="actions"><a class="btn small ghost" href="about.html">About me</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <span>© 2026 Jigyansu Tripathi</span>
+        <nav aria-label="Profiles">
+            <a href="https://www.linkedin.com/in/jigyansu-tripathi-390004181/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/jigyansu1703" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jigyansu1703.24@kgpian.iitkgp.ac.in">Email</a>
+        </nav>
+    </div>
+</footer>
 
 </body>
 </html>
